@@ -10,23 +10,33 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_uevcf")
-source = "res://examples/example_xml_1.txt"
+source = "res://examples/example_xml_1.xml"
 
-[node name="@HBoxContainer@19243" type="HBoxContainer" parent="."]
+[node name="@HBoxContainer@33619" type="HBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 grow_horizontal = 0
 
-[node name="@Label@19244" type="Label" parent="@HBoxContainer@19243"]
+[node name="@Label@33620" type="Label" parent="@HBoxContainer@33619"]
 layout_mode = 2
 text = "Hello World!"
 
-[node name="@Label@19245" type="Label" parent="@HBoxContainer@19243"]
+[node name="@Label@33621" type="Label" parent="@HBoxContainer@33619"]
 layout_mode = 2
 text = "Hello World!"
 
-[node name="@Label@19246" type="Label" parent="@HBoxContainer@19243"]
+[node name="@Label@33622" type="Label" parent="@HBoxContainer@33619"]
 layout_mode = 2
 text = "Hello World!"
+
+[node name="@VBoxContainer@33623" type="VBoxContainer" parent="@HBoxContainer@33619"]
+layout_mode = 2
+
+[node name="@Control@33624" type="Control" parent="@HBoxContainer@33619/@VBoxContainer@33623"]
+layout_mode = 2
+
+[node name="@RichTextLabel@33626" type="RichTextLabel" parent="@HBoxContainer@33619/@VBoxContainer@33623/@Control@33624"]
+layout_mode = 0
+text = "Indented rich text!"

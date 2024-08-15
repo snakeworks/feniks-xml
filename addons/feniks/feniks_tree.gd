@@ -8,5 +8,6 @@ extends Control
 @export var source: String
 
 func update_tree() -> void:
-	print("Updating tree: ", name)
-	FeniksTreeBuilder.build_tree(self, FeniksParser.parse(source))
+	var parsed_tree := FeniksParser.parse(source)
+	FeniksTreeBuilder.build_tree(self, parsed_tree)
+	FeniksParser.print_tree(parsed_tree)

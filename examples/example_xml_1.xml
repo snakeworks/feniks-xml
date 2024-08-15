@@ -2,4 +2,9 @@
 	<Label text="Hello World!"/>
 	<Label text="Hello World!"/>
 	<Label text="Hello World!"/>
+	<VBoxContainer>
+		<Control>
+			<RichTextLabel text="Indented rich text!"/>
+		</Control>
+	</VBoxContainer>
 </HBoxContainer>
