@@ -1,0 +1,5 @@
+<HBoxContainer layout_mode="1" anchors_preset="1">
+	<Label text="Hello World!"/>
+	<Label text="Hello World!"/>
+	<Label text="Hello World!"/>
+</HBoxContainer>
