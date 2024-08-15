@@ -8,5 +8,5 @@ extends Control
 @export var source: String
 
 func update_tree() -> void:
-	print("Updating tree for tree: ", name)
+	print("Updating tree: ", name)
 	FeniksTreeBuilder.build_tree(self, FeniksParser.parse(source))
