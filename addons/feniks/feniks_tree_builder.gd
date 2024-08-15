@@ -7,9 +7,6 @@ static func build_tree(node: FeniksTree, root: Dictionary) -> void:
 	_fetch_tree_children(node, root)
 	
 static func _fetch_tree_children(parent: Node, node_tree: Dictionary) -> void:
-	if node_tree == {}:
-		return
-		
 	parent = _create_node(parent, node_tree[FeniksParser.NODE_NAME], node_tree[FeniksParser.ATTRIBUTES])
 	for idx in range(len(node_tree[FeniksParser.CHILDREN])):
 		_fetch_tree_children(parent, node_tree[FeniksParser.CHILDREN][idx])

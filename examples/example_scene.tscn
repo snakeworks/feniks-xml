@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://q4ni4bohetei"]
+
+[ext_resource type="Script" path="res://addons/feniks/feniks_tree.gd" id="1_uevcf"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uevcf")
+source = "res://examples/example_xml_1.txt"
+
+[node name="@HBoxContainer@19243" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+
+[node name="@Label@19244" type="Label" parent="@HBoxContainer@19243"]
+layout_mode = 2
+text = "Hello World!"
+
+[node name="@Label@19245" type="Label" parent="@HBoxContainer@19243"]
+layout_mode = 2
+text = "Hello World!"
+
+[node name="@Label@19246" type="Label" parent="@HBoxContainer@19243"]
+layout_mode = 2
+text = "Hello World!"

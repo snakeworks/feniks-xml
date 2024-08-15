@@ -32,7 +32,7 @@ static func parse(source: String) -> Dictionary:
 		
 		node_data[NODE_NAME] = xml_parser.get_node_name() 
 		node_data[ATTRIBUTES] = attributes_dict 
-		node_data[CHILDREN] = [{}]
+		node_data[CHILDREN] = []
 		
 		queue.append(node_data)
 		
